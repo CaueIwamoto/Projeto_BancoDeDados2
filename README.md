@@ -6,7 +6,9 @@
 
 > Hanna de Oliveira Melo, R.A: 22.223.002-1
 ------------------------------------------------------
-## Introdução
+
+# Introdução
+
 O Echofy é um sistema de recomendação musical desenvolvido com o objetivo de demonstrar a integração entre diferentes modelos de bancos de dados em uma única aplicação.
 
 O sistema simula uma plataforma de streaming musical onde usuários podem:
@@ -17,7 +19,6 @@ O sistema simula uma plataforma de streaming musical onde usuários podem:
 - curtir músicas;
 - receber recomendações inteligentes.
 
-Para este projeto utilizamos múltiplos bancos de dados, onde cada tecnologia foi escolhida de acordo com o tipo de dado e comportamento esperado no sistema.
 
 ---
 
@@ -35,19 +36,59 @@ Para este projeto utilizamos múltiplos bancos de dados, onde cada tecnologia fo
 ## Bancos de Dados
 
 ### PostgreSQL
-Utilizado para armazenar:
+Responsável por armazenar:
 - usuários;
 - músicas;
 - playlists;
-- relacionamentos muitos-para-muitos entre os usuários.
+- relacionamentos muitos-para-muitos (playlist_musicas).
 
 ### MongoDB
-Utilizado para armazenar:
+Responsável por armazenar:
 - comentários das músicas.
 
 ### Neo4j
-Utilizado para:
+Responsável por:
 - sistema de curtidas;
 - relações entre usuários e músicas;
 - recomendações inteligentes.
 
+---
+
+# Requisitos para Rodar o Projeto
+
+Antes de executar o sistema, é necessário instalar localmente:
+
+## Node.js
+Download:
+https://nodejs.org/
+
+Versão recomendada:
+- LTS
+
+---
+
+## PostgreSQL
+Download:
+https://www.postgresql.org/download/
+
+Durante a instalação:
+- definir usuário = postgres;
+- definir senha = 123;
+- manter porta padrão 5433.
+
+---
+
+## MongoDB Community Server
+Download:
+https://www.mongodb.com/try/download/community
+
+Versão recomendada:
+- 7.0.x
+
+---
+
+## Neo4j Desktop
+Download:
+https://neo4j.com/download/
+
+---
